@@ -6,6 +6,7 @@ import Events from './assets/pages/Events'
 import Login from './assets/pages/Login'
 import Register from './assets/pages/Register'
 import Checkout from './assets/pages/Checkout'
+import User from './assets/pages/User'
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
     <Routes>
       <Route element={<PortalLayout />}>
         <Route path="/" element={<Events />} />
+        <Route path="/Checkout" element={<Checkout />}/>
+        <Route path="/User" element={<User />} />
       </Route>
 
       <Route element={<CenterLayout />}>
