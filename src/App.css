@@ -177,10 +177,13 @@ main {
     padding: 1.5rem;
 
     .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 2rem;
+
+        #events {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem;
+        }
 
         a {
             background-color: var(--grey-10);
@@ -192,18 +195,9 @@ main {
             .card-header {
                 background-color: var(--grey-40);
                 border-radius: 13px 13px 0 0;
-                padding-bottom: 4rem;
-                padding-top: .2rem;
+                padding-bottom: 6rem;
+                padding-top: 3rem;
                 padding-left: 1rem;
-
-                p {
-                    border-radius: 5px;
-                    background-color: var(--grey-10);
-                    color: var(--secondary-100);
-                    font-size: 14px;
-                    padding: .3rem;
-                    width: 17%;
-                }
             }
 
             .card-main {
@@ -264,44 +258,258 @@ main {
                 }
             }
         }
+        
+    }
+}
 
-        #card-2 {
+.eventDetails {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 1.5rem;
+
+    .details-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .text {
+            background-color: var(--grey-10);
+            border-radius: 13px;
+            padding: 1.5rem;
+
+            h4 {
+                margin: 0;
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            p {
+                margin: 0;
+                font-weight: 400;
+                font-size: 14px;
+                margin-top: .4rem;
+            }
+        }
+        
+
+        .card {
+            background-color: var(--grey-10);
+            /* padding-bottom: 4rem; */
+            border-radius: 13px;
 
             .card-header {
+                background-color: var(--grey-40);
+                border-radius: 13px 13px 0 0;
+                padding-bottom: 30vh;
+                padding-top: 3rem;
+                padding-left: 1rem;
+                padding-right: 45vw;
+            }
+
+            .card-main {
+                padding-right: 1.1rem;
+                padding-left: 1.1rem;
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 26px;
+                    margin: 0;
+                    padding-top: 1rem;
+                    padding-bottom: .6rem;
+                    color: var(--grey-100);
+                }
+
                 p {
-                    width: 43%;
+                    margin: 0;
+                    color: var(--grey-80);
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+            .card-footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 1.1rem;
+                padding-right: 1.1rem;
+
+                i {
+                    color: var(--grey-40);
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin: 0;
+                    color: var(--grey-100);
+
+                }
+
+                .text-primary {
+                    color: var(--primary-100);
+                    font-weight: 700;
+                    font-size: 20px;
+                    padding-top: 1rem;
+                    padding-bottom: 1.3rem;
+                }
+
+                .date {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    gap: .5rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1.3rem;
                 }
             }
         }
+    }
 
-        #card-3, #card-7 {
+    .details-left {
 
-            .card-header {
-                p {
-                    width: 23%;
-                }
+        .packages {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            padding-top: 0;
+            background-color: var(--grey-10);
+            border-radius: 13px;
+
+            h4 {
+                font-weight: 600;
+                font-size: 20px;
             }
-        }
 
-        #card-4, #card-6, #card-8 {
-
-            .card-header {
-                p {
-                    width: 19%;
-                }
+            .book-btn {
+                text-decoration: none;
+                background-color: var(--primary-100);
+                color: var(--grey-10);
+                padding: .6rem;
+                border-radius: 15px;
+                width: 35%;
+                font-size: 14px;
+                text-align: center;
+                align-self: center;
             }
-        }
 
-        #card-5 {
+            .book-btn:hover {
+                background-color: var(--primary-110);
+                cursor: pointer;
+            }
 
-            .card-header {
-                p {
-                    width: 57%;
+            .package {
+                background-color: var(--grey-20);
+                display: flex;
+                flex-direction: row;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+                padding: .12rem;
+
+                .space {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    align-items: center;
+                }
+
+                h4 {
+                    font-size: 16px;
+                    margin: 0;
+                }
+
+                .text-primary {
+                    color: var(--primary-100);
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 1rem;
+                    padding-left: 2rem;
+                }
+
+                input {
+                    margin: 1rem;
                 }
             }
         }
     }
 }
+
+.booking {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    .section {
+        background-color: var(--grey-10);
+        border-radius: 13px;
+
+        h1 {
+            font-weight: 700;
+            text-align: center;
+            color: var(--secondary-100);
+            padding-right: 11rem;
+            padding-left: 11rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        h2 {
+            font-weight: 600;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                padding-top: 1rem;
+                font-size: 14px;
+                padding-bottom: .3rem;
+                margin-right: 4rem;
+                margin-left: 4rem;
+            }
+
+            input {
+                font-size: 12px;
+                padding: .3rem;
+                margin-right: 4rem;
+                margin-left: 4rem;
+            }
+        }
+
+        .book-btn {
+            text-decoration: none;
+            background-color: var(--primary-100);
+            color: var(--grey-10);
+            padding: .6rem;
+            border-radius: 15px;
+            width: 16%;
+            font-size: 14px;
+            border: none;
+            display: grid;
+            justify-self: center;  
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;        
+        }
+
+        .book-btn:hover {
+            background-color: var(--primary-110);
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+
+
+
 
 .checkout {
     display: flex;
@@ -430,11 +638,13 @@ main {
             padding-top: 2rem;
             padding-right: 4rem;
             padding-left: 4rem;
-            padding-bottom: 1.5rem;
+            padding-bottom: 2.5rem;
 
             h1 {
                 margin: 0;
                 padding-bottom: 1rem;
+                padding-top: .5rem;
+                width: 110%;
             }
 
             .input-group {

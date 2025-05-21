@@ -11,14 +11,14 @@ const Nav = () => {
             <i class="fa-solid fa-ticket"></i>
             <p>Events</p>
           </NavLink>
-          <NavLink to="/Checkout" class="nav-btn">
+          {/* <NavLink to="/Checkout" class="nav-btn">
             <i class="fa-solid fa-cart-shopping"></i>
             <p>Checkout</p>
-          </NavLink>
-          <NavLink to="/User" class="nav-btn">
+          </NavLink> */}
+          {/* <NavLink to="/User" class="nav-btn">
             <i class="fa-solid fa-user"></i>
             <p>User</p>
-          </NavLink>
+          </NavLink> */}
         </div>
     </nav>
   )
