@@ -1,12 +1,7 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import CenterLayout from './assets/layouts/CenterLayout'
 import PortalLayout from './assets/layouts/PortalLayout'
 import Events from './assets/pages/Events'
-import Login from './assets/pages/Login'
-import Register from './assets/pages/Register'
-import Checkout from './assets/pages/Checkout'
-import User from './assets/pages/User'
 import EventDetails from './assets/pages/EventDetails'
 import BookingEvent from './assets/pages/BookingEvent'
 
