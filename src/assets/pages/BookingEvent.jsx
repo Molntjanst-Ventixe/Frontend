@@ -97,7 +97,7 @@ const BookingEvent = () => {
                     <label htmlFor="">City</label>
                     <input type="text" name="city" value={formData.city} onChange={handleChange} required placeholder="Enter your city" />
                 </div>
-                <Link class="book-btn" type="submit" to={`/`}>Book</Link>
+                <button class="book-btn" type="submit">Book</button>
             </form>
         </div>
     </main>
